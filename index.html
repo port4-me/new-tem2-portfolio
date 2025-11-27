@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Passionate developer with 5+ years of experience building scalable web applications. I love creating elegant solutions to complex problems.">
+    <title>Alex Johnson - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+      <style>
+        .profile-image-wrapper[data-position="left"] {
+          justify-self: start;
+          margin-left: 2rem;
+          margin-right: auto;
+        }
+        .profile-image-wrapper[data-position="center"] {
+          justify-self: center;
+          margin: 0 auto;
+        }
+        .profile-image-wrapper[data-position="right"] {
+          justify-self: end;
+          margin-left: auto;
+          margin-right: 2rem;
+        }
+      </style>
+      
+        <style>
+          .skill-card { padding: 1.5rem; font-size: 1rem; }
+        </style>
+        
+        <style>
+          .project-card { padding: 1.5rem; font-size: 1rem; }
+        </style>
+        </head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="nav-brand">Alex Johnson</div>
+            <ul class="nav-menu">
+                <li class="nav-item"><a href="#about">About<span class="nav-indicator"></span></a></li>
+                <li class="nav-item"><a href="#skills">Skills<span class="nav-indicator"></span></a></li>
+                <li class="nav-item"><a href="#projects">Projects<span class="nav-indicator"></span></a></li>
+                <li class="nav-item"><a href="#experience">Experience<span class="nav-indicator"></span></a></li>
+                <li class="nav-item"><a href="#contact">Contact<span class="nav-indicator"></span></a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w&#x3D;400&amp;h&#x3D;400&amp;fit&#x3D;crop" alt="Alex Johnson" class="profile-image">
+                <h1 class="hero-title">Alex Johnson</h1>
+                <p class="hero-tagline">Full Stack Developer &amp; UI/UX Enthusiast</p>
+                <p class="hero-bio">Passionate developer with 5+ years of experience building scalable web applications. I love creating elegant solutions to complex problems.</p>
+                
+                <!-- Social Links -->
+                <div class="social-links">
+                    <a href="https://github.com/alexjohnson" target="_blank" rel="noopener" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                        </svg>
+                    </a>
+                    <a href="https://linkedin.com/in/alexjohnson" target="_blank" rel="noopener" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
+                        </svg>
+                    </a>
+                    <a href="https://twitter.com/alexjohnson" target="_blank" rel="noopener" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"/>
+                        </svg>
+                    </a>
+                    <a href="https://alexjohnson.dev" target="_blank" rel="noopener" class="social-link">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <line x1="2" y1="12" x2="22" y2="12"></line>
+                            <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <!-- TEMPLATE DEBUG: SKILLS ARRAY FOUND - LENGTH: 6 -->
+                <div class="skill-card">
+                    <!-- DEBUG: SKILL ITEM - name:JavaScript level:Expert -->
+                    <h3 class="skill-name">JavaScript</h3>
+                    <span class="skill-level">Expert</span>
+                </div>
+                <div class="skill-card">
+                    <!-- DEBUG: SKILL ITEM - name:React level:Advanced -->
+                    <h3 class="skill-name">React</h3>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card">
+                    <!-- DEBUG: SKILL ITEM - name:Node.js level:Advanced -->
+                    <h3 class="skill-name">Node.js</h3>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card">
+                    <!-- DEBUG: SKILL ITEM - name:TypeScript level:Intermediate -->
+                    <h3 class="skill-name">TypeScript</h3>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+                <div class="skill-card">
+                    <!-- DEBUG: SKILL ITEM - name:CSS/Sass level:Advanced -->
+                    <h3 class="skill-name">CSS/Sass</h3>
+                    <span class="skill-level">Advanced</span>
+                </div>
+                <div class="skill-card">
+                    <!-- DEBUG: SKILL ITEM - name:MongoDB level:Intermediate -->
+                    <h3 class="skill-name">MongoDB</h3>
+                    <span class="skill-level">Intermediate</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1557821552-17105176677c?w&#x3D;800&amp;h&#x3D;600&amp;fit&#x3D;crop" alt="E-Commerce Platform" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">A full-featured online shopping platform with real-time inventory management, payment processing, and admin dashboard.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">MongoDB</span>
+                            <span class="tag">Stripe</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://example.com/ecommerce" target="_blank" class="btn btn-sm">Live Demo</a>
+                            <a href="https://github.com/alexjohnson/ecommerce" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?w&#x3D;800&amp;h&#x3D;600&amp;fit&#x3D;crop" alt="Task Management App" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Task Management App</h3>
+                        <p class="project-description">Collaborative task management tool with real-time updates, team collaboration features, and advanced analytics.</p>
+                        <div class="project-tags">
+                            <span class="tag">Vue.js</span>
+                            <span class="tag">Firebase</span>
+                            <span class="tag">Tailwind CSS</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://example.com/taskapp" target="_blank" class="btn btn-sm">Live Demo</a>
+                            <a href="https://github.com/alexjohnson/taskapp" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?w&#x3D;800&amp;h&#x3D;600&amp;fit&#x3D;crop" alt="Weather Dashboard" class="project-image">
+                    <div class="project-content">
+                        <h3 class="project-title">Weather Dashboard</h3>
+                        <p class="project-description">Beautiful weather application with detailed forecasts, interactive maps, and location-based alerts.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">OpenWeather API</span>
+                            <span class="tag">Chart.js</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://example.com/weather" target="_blank" class="btn btn-sm">Live Demo</a>
+                            <a href="https://github.com/alexjohnson/weather" target="_blank" class="btn btn-sm btn-outline">GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Senior Software Engineer</h3>
+                        <h4 class="timeline-company">Tech Innovations Inc.</h4>
+                        <p class="timeline-date">
+                            Jan 2021 - Present
+                        </p>
+                        <p class="timeline-description">Leading development of cloud-native applications and mentoring junior developers. Architected microservices infrastructure serving 1M+ users.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Full Stack Developer</h3>
+                        <h4 class="timeline-company">Digital Solutions Co.</h4>
+                        <p class="timeline-date">
+                            Mar 2019 - Dec 2020
+                        </p>
+                        <p class="timeline-description">Developed and maintained multiple client projects using modern web technologies. Improved application performance by 40%.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">Junior Developer</h3>
+                        <h4 class="timeline-company">StartUp Labs</h4>
+                        <p class="timeline-date">
+                            Jun 2017 - Feb 2019
+                        </p>
+                        <p class="timeline-description">Built responsive web applications and collaborated with design team to implement pixel-perfect interfaces.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section section-alt">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p class="contact-item">
+                    <strong>Email:</strong> <a href="mailto:alex.johnson@example.com">alex.johnson@example.com</a>
+                </p>
+                <p class="contact-item">
+                    <strong>Phone:</strong> +1 (555) 123-4567
+                </p>
+                <p class="contact-item">
+                    <strong>Location:</strong> San Francisco, CA
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;  Alex Johnson. All rights reserved.</p>
+            <p class="footer-credit">Built with <a href="https://port4me.com" target="_blank">Port4me</a></p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
